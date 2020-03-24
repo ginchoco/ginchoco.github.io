@@ -1940,14 +1940,7 @@ input, select, textarea {
 		}
 
 		input[type="submit"]:active,
-		input[type="reset"]:active, /*-moz-transition: margin 0.2s ease;
-		-webkit-transition: margin 0.2s ease;
-		-ms-transition: margin 0.2s ease;
-		transition: margin 0.2s ease;
-		display: inline-block;
-		margin: 0 0.35em;
-		padding: 0;
-		vertical-align: middle;*/
+		input[type="reset"]:active, 
 		input[type="button"]:active,
 		button:active,
 		.button:active {
