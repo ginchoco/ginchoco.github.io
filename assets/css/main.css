@@ -2258,8 +2258,8 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
-		.icon.major {
-			border: solid 1px;
+		.icon.major { /*borderz*/
+			border: solid 3px;
 			display: inline-block;
 			border-radius: 100%;
 			padding: 0.65em;
@@ -2270,11 +2270,11 @@ input, select, textarea {
 			.icon.major:before {
 				display: inline-block;
 				font-size: 6.25rem;
-				width: 2.25em;
-				height: 2.25em;
-				line-height: 2.2em;
+				width: 2.0em;
+				height: 2.0em;
+				line-height: 2.0em;
 				border-radius: 100%;
-				border: solid 1px;
+				border:solid 3px ;
 				text-align: center;
 			}
 
@@ -3534,7 +3534,7 @@ input, select, textarea {
 			color: rgba(99, 99, 99, 0.25) !important;
 		}
 
-		#main .icon.major {
+		#main .icon.major { /*hello*/
 			border-color: #dddddd;
 		}
 
