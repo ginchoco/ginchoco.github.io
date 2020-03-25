@@ -6,6 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		#more {display: none;}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -15,7 +19,7 @@
 				<!-- Header -->
 					<header id="header">
 						<h1>Writing</h1>
-						<p>Short narratives, interactive HTML projects, and a bag of poems</p>
+						<p>An Interactive Fiction project, a creative narrative piece, and a sonnet.</p>
 					</header>
 					<nav id="nav">
 						<ul>
@@ -33,7 +37,7 @@
 								<span class="image"><img src="images/Loading...Photo.jpg" alt="Loading...Photo" style="width:600px;height:500px;"></span>
 								<h2>Loading...</h2>
 								<p>Interactive Narrative HTML Story</p>
-								<p>Loading... is an interactive story where your choices determine your ending. Without spoiling too much, it's set in the not-so-distant future where you must uncover what this computer holds about the past and for the future. I wrote this piece since I was inspired by Adam Cadre and his Interactive Fiction piece, Varicella. If you haven't played it, I highly recommend you do. From it I draw inspiration for the voice, speed, and focalization of my own piece. Enjoy!</p>
+								<p>Loading... is an interactive story where your choices determine your ending. Without spoiling too much, it's set in the not-so-distant future where you must uncover what this computer holds about the past and for the future. I wrote this piece since I was inspired by Adam Cadre and his Interactive Fiction piece, Varicella. If you haven't played it, I highly recommend you do. From it I draw inspiration for the voice, speed, and focalization of my own piece.</p>
 								<ul class="actions">
 									<li><a href="Loading... Official.html" class="button">Play Game</a></li>
 								</ul>
@@ -44,13 +48,51 @@
 									<li><a href="LastBookoftheLaw.html" class="button">Read Piece</a></li>
 								</ul>
 								 
-								<h2>Inexhaustible Voice</h2>
+								<!-- <h2>Inexhaustible Voice</h2>
 								<p>"I am a writer becuase I am a human first." The one and only creative video I've put together, and while it is not finished I don't think I can ever go back to it. Because this video was created out of my own heart, which has grown and changed since then, but I love it as a small time capsule of how I saw the world and I felt I was seen. Title and quotes of the video are by William Faulkner.</p>
 								<ul class="actions">
 									<li><a href="KnowingRemembers.html" class="button">Watch Video</a></li>
-								</ul>
-							</section>
+								</ul> -->
 
+								<h2>Memory Believing Before Knowing Remembers</h2>  
+                                <p>A sonnet about my favorite summer pasttime, lying on the grass outside my house<span id="dots">...</span></p>
+									  
+									  <span id="more"><pre>
+	It is of chaos and confusion here
+	Ne’er sun so loud, or sphere so farce as she
+	To whom who watches be the quiet seer
+	As warmth ensues; the heart will course to beat
+	Find pulled lightness from faint and unclear mind
+	Brought forth elated calm in nature’s rest
+	How to compare the chirp and buzz entwined,
+	Or slight breath of a summer's wind to test
+	Where is creation once this place hath set
+	It was hidden, do you see it so far?
+	The uncover’d world from above calls a bet
+	To try to fall into the blue noir
+	And the tinge of sorrow from being a part
+										</pre></span>
+										<ul class="actions">
+											<li><a onclick="myFunction()" class="button" id="myBtn">Read Poem</a></li>
+										</ul>
+							</section>
+							<script>
+							function myFunction() {
+							  var dots = document.getElementById("dots");
+							  var moreText = document.getElementById("more");
+							  var btnText = document.getElementById("myBtn");
+							
+							  if (dots.style.display === "none") {
+								dots.style.display = "inline";
+								btnText.innerHTML = "Read Poem"; 
+								moreText.style.display = "none";
+							  } else {
+								dots.style.display = "none";
+								btnText.innerHTML = "Read less"; 
+								moreText.style.display = "inline";
+							  }
+							}
+							</script>
 					</div>
 
 				<!-- Footer -->
