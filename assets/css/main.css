@@ -164,7 +164,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
-		border-bottom: dotted 1px;
+		border-bottom: solid 1px;
 		color: inherit;
 	}
 
@@ -200,7 +200,7 @@ input, select, textarea {
 		font-weight: 300;
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
-		letter-spacing: -0.025em;
+		letter-spacing: .015em;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -214,7 +214,7 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 
 	h3 {
@@ -232,7 +232,16 @@ input, select, textarea {
 	h6 {
 		font-size: 0.7em;
 	}
-
+	.title a {
+		background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, rgb(205, 230, 200) 50%);
+		background-position: -0% 0;
+		background-size: 200% auto;
+		transition: background-position 0.5s ease-out;
+	  }
+	  .title a:hover {
+		background-position: -99.99% 0;
+	  }
+	  
 	@media screen and (max-width: 736px) {
 
 		h1 {
