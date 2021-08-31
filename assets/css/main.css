@@ -1,12 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -100,6 +94,7 @@ input, select, textarea {
 
 	body {
 		background-color: #647e66;
+		margin-top: 4rem;
 		}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -116,7 +111,9 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #e9ebe8; /* Background color*/
+		background-color: #e8ebeb; /* Background color*/
+		/* Old color was light green #e8ebe8 */
+		
 		/* background-imafimage: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0); */
 		/* background-image: url("images/overlay.png"), linear-gradient(45deg, #ffffff 5%, #EFAF87 95%); */
 			
@@ -2267,9 +2264,13 @@ input, select, textarea {
 			font-weight: 900;
 		}
 
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
-		}
+		.icon.brands{
+			font-size: xx-large;
+			}
+
+			.icon.brands:before {
+				font-family: 'Font Awesome 5 Brands';
+			}
 
 		.icon.major { /*borderz*/
 			border: solid 3px;
@@ -2283,8 +2284,8 @@ input, select, textarea {
 			.icon.major:before {
 				display: inline-block;
 				font-size: 6.25rem;
-				width: 2.0em;
-				height: 2.0em;
+				width: 4.0em;
+				height: 4.0em;
 				line-height: 2.0em;
 				border-radius: 100%;
 				border:solid 3px ;
@@ -2728,7 +2729,7 @@ input, select, textarea {
 			}
 
 	footer.major {
-		margin-top: 3em;
+		margin-top: 1em;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -3767,7 +3768,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#footer {
-				padding: 4em 4em 2em 4em ;
+				padding: 2em 2em 2em 2em ;
 			}
 
 		}
@@ -3775,7 +3776,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#footer {
-				padding: 4em 3em 2em 3em ;
+				padding: 2em 3em 2em 3em ;
 				display: block;
 				margin: 0 0 3em 0;
 				width: 100%;
