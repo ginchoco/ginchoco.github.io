@@ -2670,7 +2670,6 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
 
@@ -3977,7 +3976,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#footer {
-				padding: 1em 2em 2em 2em ;
+				padding: 2em 2em 0 2em ;
 			}
 
 		}
