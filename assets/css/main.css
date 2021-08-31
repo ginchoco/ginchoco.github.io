@@ -262,8 +262,8 @@ input, select, textarea {
   .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
 	-webkit-animation-name: hvr-bob-float, hvr-bob;
 	animation-name: hvr-bob-float, hvr-bob;
-	-webkit-animation-duration: .3s, 1.5s;
-	animation-duration: .3s, 1.5s;
+	-webkit-animation-duration: .3s, .3s;
+	animation-duration: .3s, .3s;
 	-webkit-animation-delay: 0s, .3s;
 	animation-delay: 0s, .3s;
 	-webkit-animation-timing-function: ease-out, ease-in-out;
