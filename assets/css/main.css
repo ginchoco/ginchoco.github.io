@@ -2888,10 +2888,11 @@ input, select, textarea {
 		text-align: center;
 		padding: 0 40%;
 		width: 100%;
+		display: inline-block !important; 
 	}
 
 		ul.icons li {
-			display: inline-block;
+			display: inline-block !important;
 		}
 
 /* Section/Article */
@@ -3956,7 +3957,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		padding: 2.4em 5em 3em 5em ;
+		padding: 2.4em 2em 3em 2em ;
 		/* width: calc(100% + 2em); */
 		/* margin: 0 0 3em -2em; */
 	}
@@ -3994,6 +3995,7 @@ input, select, textarea {
 					width: 100%;
 					margin-left: 0;
 					margin-bottom: 3em;
+					display: inline-block !important;
 				}
 
 				#footer .copyright {
