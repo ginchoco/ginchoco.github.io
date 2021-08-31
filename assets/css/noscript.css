@@ -6,7 +6,7 @@
 
 /* Header */
 
-	body.is-preload #header.alt > * {
+	/* body.is-preload #header.alt > * {
 		opacity: 1;
 	}
 
@@ -15,4 +15,4 @@
 		-webkit-transform: none;
 		-ms-transform: none;
 		transform: none;
-	}
+	} */
