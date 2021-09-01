@@ -1,6 +1,16 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
+/* Light theme */
+/* Light theme */
+:root {
+	--background-color: white;
+	--text-color: #636363; /* #636363 */
+	--highlight-color: #c7d2dd;
+	--other-highlight-color: #5f6268;
+	--icon-color: #727171;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -93,7 +103,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #647e66;
+		background-color: var(--background-color);
 		margin-top: 2rem;
 		}
 
@@ -320,7 +330,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #ffff; /* Background color*/
+		background-color: var(--background-color); /* Background color*/
 		/* Old color was light green #e8ebe8  #d7dadd fj */
 		
 		/* background-imafimage: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0); */
@@ -330,7 +340,7 @@ input, select, textarea {
 			background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #9fb595 15%, #708068 85%);
 			background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, rgb(255, 255, 255) 15%, #7686ec 85%); */
 			
-			color: #727171; /*Paragraph color the <p>rgba(221, 220, 220, 0.65)*/
+		color: var(--icon-color); /* Social media icon colors */
 	}
 
 	body, input, select, textarea {
@@ -379,14 +389,14 @@ input, select, textarea {
 			display: inline-block;
 			padding: 2px 3px;
 			text-decoration: none;
-			-webkit-box-shadow: inset 0 -3px 0 #5f6268;
-			box-shadow: inset 0 -3px 0 #c7d2dd;
+			-webkit-box-shadow: inset 0 -3px 0 var(--highlight-color);
+			box-shadow: inset 0 -3px 0 var(--highlight-color);
 		}
 		/* fj */
 		a.highlight-link:hover {
-			-webkit-box-shadow: inset 0 -33px 0 0 #5f6268;
-			box-shadow: inset 0 -33px 0 0 #c7d2dd;
-			color: #ffff !important;
+			-webkit-box-shadow: inset 0 -33px 0 0 #c7d2dd;
+			box-shadow: inset 0 -33px 0 0 var(--highlight-color);
+			color: var(--background-color) !important;
 			border-radius: .25em;
 
 		}
@@ -535,31 +545,19 @@ input, select, textarea {
 	}
 
 	input, select, textarea {
-		color: #ffffff;
+		color: var(--background-color);
 	}
 
 	a:hover {
-		color: #ffffff;
+		color: var(--background-color);
 	}
 
 	strong, b {
-		color: #ffffff;
+		color: var(--background-color);
 	}
 
-	h1, h2, h4, h5, h6 {
-		color:#383838;  /*Header "Portfolio" */
-	}
-	h3 {
-		color: #729663;
-	}
-
-	blockquote {
-		border-left-color: rgba(255, 255, 255, 0.35);
-	}
-
-	code {
-		background: rgba(255, 255, 255, 0.075);
-		border-color: rgba(255, 255, 255, 0.35);
+	h1, h2, h3, h4, h5, h6 {
+		color:var(--text-color);  /*Header "Portfolio" */
 	}
 
 	hr {
@@ -2488,79 +2486,12 @@ input, select, textarea {
 
 		.icon.brands{
 			font-size: xx-large;
+			color: var(--icon-color) !important;
 			}
 
 			.icon.brands:before {
 				font-family: 'Font Awesome 5 Brands';
 			}
-
-		.icon.major { /*borderz*/
-			border: solid 3px;
-			display: inline-block;
-			border-radius: 100%;
-			padding: 0.65em;
-			margin: 0 0 2em 0;
-			cursor: default;
-		}
-
-			.icon.major:before {
-				display: inline-block;
-				font-size: 6.25rem;
-				width: 4.0em;
-				height: 4.0em;
-				line-height: 2.0em;
-				border-radius: 100%;
-				border:solid 3px ;
-				text-align: center;
-			}
-
-		.icon.alt {
-			display: inline-block;
-			border: solid 1px;
-			border-radius: 100%;
-		}
-
-			.icon.alt:before {
-				display: block;
-				font-size: 1.25em;
-				width: 2em;
-				height: 2em;
-				text-align: center;
-				line-height: 2em;
-			}
-
-		.icon.style1 { /* Music icon*/
-			background-color: #ffffff; /*first*/
-			color: #a3c7a8;
-			/* background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #74d3af 15%, #86e972 85%); */
-		}
-
-		.icon.style2 {
-			color: rgb(179, 179, 179);/*AF5D63*/
-		}
-		
-		/* Pretty green, blue/green, blue colors 78d184,4ad8b9, 5ba6d8 */
-		.icon.style3 {
-			background-color: #ffffff; /*second*/
-			color: #283044;
-			/* background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #86e972 15%, #74d3af 85%); */
-			
-			/* background-image: url("images/overlay.png"), linear-gradient(45deg, #ffffff 5%, #EFAF87 95%); */
-			
-		}
-
-		.icon.style4 {
-			background-color: #ffffff; /*second*/
-			color: #8B786D;
-			/* background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #74d3af 15%, #86e972 85%); */
-		}
-
-		.icon.style5 {
-			background-color: #333830; /*third*/
-			color: #ffffff;
-			/* background-image: url("images/overlay.png"), linear-gradient(45deg, #ffffff 5%, #EFAF87 95%); */
-			
-		}
 
 		@media screen and (max-width: 1680px) {
 
@@ -3485,6 +3416,47 @@ input, select, textarea {
 			transform: scale(0.8) rotate(-30deg);
 		}
 
+/* New nav-bar */
+	#nav-bar {
+		-moz-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+		-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
+		position: absolute;
+		width: 64em;
+		max-width: calc(100% - 4em);
+		padding: 1em;
+		border-top-left-radius: 0.25em;
+		border-top-right-radius: 0.25em;
+		cursor: default;
+		text-align: right;
+	}
+		#nav-bar ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+			#nav-bar ul li {
+				-moz-transition: margin 0.2s ease;
+				-webkit-transition: margin 0.2s ease;
+				-ms-transition: margin 0.2s ease;
+				transition: margin 0.2s ease;
+				display: inline-block;
+				margin: 0 0.35em;
+				padding: 0;
+				vertical-align: middle;
+			}
+	.change-theme {
+		font-size: large;
+	}
+		.change-theme:hover {
+			color: rgb(145, 174, 199);
+		}
+
+/* Dark Theme jk*/
+
+
 /* Nav */
 
 	#nav {
@@ -3493,12 +3465,11 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		background-color: #ffffff;
-		color: #636363;
+		/* color: #636363; */
 		position: absolute;
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
-		background-color: #f7f7f7;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
