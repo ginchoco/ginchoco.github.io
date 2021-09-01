@@ -2457,6 +2457,7 @@ input, select, textarea {
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-bottom: none;
 		position: relative;
+		display: inline-block;
 	}
 
 		.icon:before {
@@ -2487,6 +2488,7 @@ input, select, textarea {
 		.icon.brands{
 			font-size: xx-large;
 			color: var(--icon-color) !important;
+			display: inline-block;
 			}
 
 			.icon.brands:before {
@@ -2680,7 +2682,7 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: inline-block;
 		cursor: default;
 		list-style: none;
 		margin-left: -1em;
@@ -3455,7 +3457,8 @@ input, select, textarea {
 		}
 		@media screen and (max-width: 360px) {
 			#nav-bar {
-				align-self: flex-start;
+				margin-right: 3rem;
+				margin-left: 0;
 				padding-top: 0;
 			}
 		}
@@ -3993,9 +3996,14 @@ body.dark-theme {
 
 			#footer {
 				padding: 2em 3em 2em 3em ;
-				display: block;
+				display: inline-block;
 				margin: 0 0 3em 0;
 				width: 100%;
+			}
+			#ul.icons {
+				padding: 0 0 0 0;
+				width: 100%;
+				display: inline-block !important;
 			}
 
 				#footer > * {
@@ -4013,10 +4021,18 @@ body.dark-theme {
 
 		@media screen and (max-width: 736px) {
 
+			#ul.icons {
+				cursor: default;
+				list-style: none;
+				text-align: center;
+				padding: 0 20%;
+				width: 30%;
+				display: inline-block;
+			}
+
 			#footer {
 				padding: 2em 2em 1em 2em ;
 			}
-
 		}
 
 		@media screen and (max-width: 480px) {
