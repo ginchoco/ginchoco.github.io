@@ -193,25 +193,32 @@ input, select, textarea {
 		transform: translateX(-1px) rotate(0);
 	}
 	}
+	.shake{
+		animation: hvr-buzz-out 2s;
+		display: inline-block;
+	}
 	.hvr-buzz-out {
 	display: inline-block;
 	vertical-align: middle;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	animation: 2s ease-in 0s 1 hvr-buzz-out;
 	}
-	.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
-	-webkit-animation-name: hvr-buzz-out;
-	animation-name: hvr-buzz-out;
-	-webkit-animation-duration: 0.75s;
-	animation-duration: 1.25s;
-	-webkit-animation-timing-function: linear;
-	animation-timing-function: linear;
-	-webkit-animation-iteration-count: 1;
-	animation-iteration-count: 1;
-	}
-
+		.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
+		-webkit-animation-name: hvr-buzz-out;
+		animation-name: hvr-buzz-out;
+		-webkit-animation-duration: 0.75s;
+		animation-duration: 1.25s;
+		-webkit-animation-timing-function: linear;
+		animation-timing-function: linear;
+		-webkit-animation-iteration-count: 1;
+		animation-iteration-count: 1;
+		}
+.bounce{
+	animation: hvr-bob .5s;
+	animation-iteration-count: 3;
+	display: inline-block;
+}
 /* Bob */
 @-webkit-keyframes hvr-bob {
 	0% {
@@ -259,8 +266,6 @@ input, select, textarea {
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	animation: .5s ease-in 0s 3 hvr-bob;
-	animation-iteration-count:4
   }
   .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
 	-webkit-animation-name: hvr-bob-float, hvr-bob;
