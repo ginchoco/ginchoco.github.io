@@ -259,7 +259,8 @@ input, select, textarea {
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	animation: 1s ease-in 0s 1 hvr-bob;
+	animation: .5s ease-in 0s 3 hvr-bob;
+	animation-iteration-count:4
   }
   .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
 	-webkit-animation-name: hvr-bob-float, hvr-bob;
