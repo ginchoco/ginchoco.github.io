@@ -3652,7 +3652,7 @@ body.dark-theme {
 		background-color: var(--background-color);
 		color: #636363;
 		border-radius: 0.25em;
-		margin-top: 4.8em;
+		margin-top: 3.5em;
 	}
 
 		#main input, #main select, #main textarea {
