@@ -6,7 +6,7 @@
 :root {
 	--background-color: white;
 	--text-color: #636363; /* #636363 */
-	--highlight-color: #c7d2dd;
+	--highlight-color: #9aa3ac;
 	/* --other-highlight-color: #5f6268; */
 	--icon-color: #727171;
 }
@@ -3430,7 +3430,7 @@ input, select, textarea {
 		border-top-right-radius: 0.25em;
 		cursor: default;
 		text-align: right;
-	}
+		}
 		#nav-bar ul {
 			margin: 0;
 			padding: 0;
@@ -3447,6 +3447,19 @@ input, select, textarea {
 				padding: 0;
 				vertical-align: middle;
 			}
+		@media screen and (max-width: 736px) {
+
+			#nav-bar {
+				margin-left: 2.5rem;
+			}
+		}
+		@media screen and (max-width: 360px) {
+			#nav-bar {
+				align-self: flex-start;
+				padding-top: 0;
+			}
+		}
+		
 	.change-theme {
 		font-size: large;
 	}
@@ -3454,9 +3467,11 @@ input, select, textarea {
 			color: var(--highlight-color);
 		}
 
+		
+
 /* Dark Theme jk*/
 body.dark-theme {
-	--background-color: #636363;
+	--background-color: #383838;
 	--text-color: white;
 	--highlight-color: rgb(214, 232, 255); /* #aac2dd */
 	--icon-color: white;
