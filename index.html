@@ -6,7 +6,8 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="Hi! I'm Gaby Inchoco and this is my portfolio website. I'm a design-focused software engineer intern interested in computational theory and ethics research.">
-	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/main.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 	<link rel="icon"
 		href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔️</text></svg>">
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
@@ -22,6 +23,12 @@
 					</ul>
 				</nav>
 
+		<!-- Slide container  -->
+		<div class="portfolio_container container"></div>
+			<div>
+				<div class="portfolio_content grid"></div>
+				
+			</div>
 
 		<!-- Main -->
 		<div id="main">
@@ -53,13 +60,21 @@
 			<!-- <section id="intro" class="main">
 				<div class="spotlight">
 					<div class="content">
-
-
-
 					</div>
 				</div>
 			</section> -->
 		</div>
+
+		
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+			  <div class="swiper-slide">Slide 1</div>
+			  <div class="swiper-slide">Slide 2</div>
+			  <div class="swiper-slide">Slide 3</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
 
 		<!-- Footer -->
 		<footer id="footer">
@@ -83,7 +98,23 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+		  pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+			renderBullet: function (index, className) {
+			  return '<span class="' + className + '">' +  "</span>";
+			},
+		  },
+		});
+	  </script>
 </body>
 
 </html>
-<!-- Second Section -->
+
+
+
+
+
