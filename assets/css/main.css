@@ -3458,7 +3458,7 @@ input, select, textarea {
 body.dark-theme {
 	--background-color: #636363;
 	--text-color: white;
-	--highlight-color: white; /* #aac2dd */
+	--highlight-color: rgb(214, 232, 255); /* #aac2dd */
 	--icon-color: white;
 
 	/* --background-color: white;
