@@ -1,8 +1,5 @@
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
+
 
 (function($) {
 
@@ -121,3 +118,33 @@
 		});
 
 })(jQuery);
+
+
+
+// DARK LIGHT THEME
+const themeButton = document.getElementById('theme-button')
+const darkTheme = "dark-theme"
+const iconTheme = 'bx-sun'
+
+//  Previously selected topic
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => document.body.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
+
+if (selectedTheme) {
+	document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+	themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
+}
+
+// Activate /deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+	// Add or remove the dark/theme
+	document.body.classList.toggle(darkTheme)
+	themeButton.classList.toggle(iconTheme)
+	// We save the theme and current icon that the user chose
+	localStorage.setItem('selected-theme', getCurrentTheme())
+	localStorage.setItem('selected-icon', getCurrentIcon())
+})
