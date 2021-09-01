@@ -3513,7 +3513,7 @@ input, select, textarea {
 
 /* Dark Theme jk*/
 body.dark-theme {
-	--background-color: #383838;
+	--background-color: #292828;
 	--text-color: white;
 	--highlight-color: rgb(214, 232, 255); /* #aac2dd */
 	--icon-color: white;

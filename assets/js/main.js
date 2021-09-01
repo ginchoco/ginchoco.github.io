@@ -20,6 +20,11 @@
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 			}, 100);
+
+			if (selectedTheme) {
+				document.body.classList[selectedTheme === 'dark-theme' ? 'add' : 'remove'](darkTheme)
+				themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
+			}
 		});
 
 	// Nav.
@@ -133,7 +138,7 @@ const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dar
 const getCurrentIcon = () => document.body.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
 
 if (selectedTheme) {
-	document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+	document.body.classList[selectedTheme === 'dark-theme' ? 'add' : 'remove'](darkTheme)
 	themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
 }
 
@@ -146,8 +151,5 @@ themeButton.addEventListener('click', () => {
 	localStorage.setItem('selected-theme', getCurrentTheme())
 	localStorage.setItem('selected-icon', getCurrentIcon())
 })
-
-
-
 
 
