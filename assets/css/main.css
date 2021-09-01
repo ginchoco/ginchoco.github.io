@@ -199,6 +199,7 @@ input, select, textarea {
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	animation: 2s ease-in 0s 1 hvr-buzz-out;
 	}
 	.hvr-buzz-out:hover, .hvr-buzz-out:focus, .hvr-buzz-out:active {
 	-webkit-animation-name: hvr-buzz-out;
@@ -258,6 +259,7 @@ input, select, textarea {
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	animation: 1s ease-in 0s 1 hvr-bob;
   }
   .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
 	-webkit-animation-name: hvr-bob-float, hvr-bob;
@@ -312,8 +314,8 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #e8ebeb; /* Background color*/
-		/* Old color was light green #e8ebe8 */
+		background-color: #d7dadd; /* Background color*/
+		/* Old color was light green #e8ebe8  fj */
 		
 		/* background-imafimage: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0); */
 		/* background-image: url("images/overlay.png"), linear-gradient(45deg, #ffffff 5%, #EFAF87 95%); */
@@ -371,14 +373,16 @@ input, select, textarea {
 			display: inline-block;
 			padding: 2px 3px;
 			text-decoration: none;
-			-webkit-box-shadow: inset 0 -3px 0 #d2e2f3;
-			box-shadow: inset 0 -3px 0 #d2e2f3;
+			-webkit-box-shadow: inset 0 -3px 0 #5f6268;
+			box-shadow: inset 0 -3px 0 #c7d2dd;
 		}
-		
+		/* fj */
 		a.highlight-link:hover {
-			-webkit-box-shadow: inset 0 -33px 0 0 #d2e2f3;
-			box-shadow: inset 0 -33px 0 0 #d2e2f3;
+			-webkit-box-shadow: inset 0 -33px 0 0 #5f6268;
+			box-shadow: inset 0 -33px 0 0 #c7d2dd;
 			color: #ffff !important;
+			border-radius: .25em;
+
 		}
 	
 	strong, b {
