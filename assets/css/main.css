@@ -2534,6 +2534,11 @@ input, select, textarea {
 				font-family: 'Font Awesome 5 Brands';
 			}
 
+			.icon.brands:hover {
+				color: var(--highlight-color) !important;
+			}
+
+
 		@media screen and (max-width: 1680px) {
 
 			.icon.major:before {
