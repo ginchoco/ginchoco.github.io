@@ -2,12 +2,11 @@
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
 /* Light theme */
-/* Light theme */
 :root {
 	--background-color: white;
 	--text-color: #636363; /* #636363 */
-	--highlight-color: #9aa3ac;
-	/* --other-highlight-color: #5f6268; */
+	--highlight-color: #8db1f5;
+	--other-highlight-color: #8db2f531;
 	--icon-color: #727171;
 }
 
@@ -412,7 +411,7 @@ input, select, textarea {
 			}
 
 		}
-
+/* hyperlink */
 	a {
 		-moz-transition: color 0.2s ease, border-bottom 0.2s ease;
 		-webkit-transition: color 0.2s ease, border-bottom 0.2s ease;
@@ -648,7 +647,8 @@ input, select, textarea {
     text-transform: uppercase;
     text-align: right;
     font-weight: 700;
-    letter-spacing: 2px
+    letter-spacing: 2px;
+	color: var(--highlight-color);
 }
 
 @media screen and (max-width: 1024px) {
@@ -708,7 +708,7 @@ input, select, textarea {
     left: 0;
     width: 100%;
     height: 1px;
-    background: #36363c;
+    background: var(--highlight-color);
     content: '';
     opacity: 0;
     -webkit-transition: height .3s,opacity .3s,-webkit-transform .3s;
@@ -729,38 +729,30 @@ input, select, textarea {
 
 
 .arrow-link {
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    font-weight: 700;
-    display: inline-block;
+	color: var(--highlight-color);
     background-color: transparent;
-    white-space: nowrap
+    border: 1px solid var(--highlight-color);
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    line-height: 1;
+    text-decoration: none;
+	font-weight: 700
 }
-
-.arrow-link:after {
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    position: relative;
-    bottom: 2px;
-    margin-left: 15px;
-    content: '';
-    background: url(../img/arrow.png) no-repeat center;
-    background-size: 100%;
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    vertical-align: middle
-}
-
-.arrow-link:hover:after {
-    -webkit-transform: translateX(7px);
-    transform: translateX(7px)
-}
+	.arrow-link:hover {
+		color: var(--highlight-color) !important;
+		background-color: var(--other-highlight-color);
+		border: 1px solid var(--highlight-color);
+		border-radius: 4px;
+		padding: 0.75rem 1rem;
+		line-height: 1;
+		text-decoration: none;
+		font-weight: 700
+	}
 
 /* Jobs */
 
 .experience .jobs {
-    margin-bottom: 100px
+    margin-bottom: 60px
 }
 
 .experience .job {
@@ -796,46 +788,6 @@ input, select, textarea {
         font-size:.75rem
     }
 }
-
-.arrow-link {
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    font-weight: 700;
-    display: inline-block;
-    background-color: transparent;
-    white-space: nowrap
-}
-
-.arrow-link:after {
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    position: relative;
-    bottom: 2px;
-    margin-left: 15px;
-    content: '';
-    background: url(/images/right-arrow-alt-regular-24.png) no-repeat center;
-    background-size: 100%;
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    vertical-align: middle
-}
-
-.arrow-link:hover:after {
-    -webkit-transform: translateX(7px);
-    transform: translateX(7px)
-}
-
-
-.experience .arrow-link {
-    font-size: 1.25rem
-}
-
-.experience .arrow-link:after {
-    width: 20px;
-    height: 20px
-}
-
 
 /* Box */
 
