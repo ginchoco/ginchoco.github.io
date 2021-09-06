@@ -418,8 +418,11 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
-		color: inherit;
+		color: var(--text-color);
 	}
+		a:hover{
+			color: var(--highlight-color) !important;
+		}
 
 		a.highlight-link {
 			-webkit-transition: all .2s ease-in-out;
@@ -1380,6 +1383,10 @@ input, select, textarea {
 
 		ul li {
 			padding-left: 0.5em;
+		}
+
+		ul li a:hover {
+			color: var(--highlight-color);
 		}
 
 		ul.alt {
