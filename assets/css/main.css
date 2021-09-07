@@ -1598,13 +1598,14 @@ input, select, textarea {
 		list-style: none;
 		padding-left: 0;
 		text-align: center;
-		padding: 0 40%;
 		width: 100%;
 		display: inline-block !important; 
+		margin-top: 1.5rem;
 	}
 
 		ul.icons li {
 			display: inline-block !important;
+			margin-right: 2rem;
 		}
 
 /* Section/Article */
@@ -2749,7 +2750,7 @@ body.dark-theme {
 		#footer .copyright {
 			width: 100%;
 			margin: 2.5em 0 2em 0;
-			font-size: 0.5em;
+			font-size: 0.65em;
 			text-align: center;
 		}
 
