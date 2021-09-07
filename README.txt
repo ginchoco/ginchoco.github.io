@@ -1,1 +1,1 @@
-A minimalist portfolio with base thanks to @ajlkn and @html5up.net, edited by @ginchoco.
+A minimalist portfolio inspired by @bchiang7, edited by @ginchoco.
