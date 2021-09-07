@@ -1381,9 +1381,9 @@ input, select, textarea {
 		padding-left: 1em;
 	}
 
-		ul li {
+		/* ul li {
 			padding-left: 0.5em;
-		}
+		} */
 
 		ul li a:hover {
 			color: var(--highlight-color);
@@ -2750,7 +2750,7 @@ body.dark-theme {
 		#footer .copyright {
 			width: 100%;
 			margin: 2.5em 0 2em 0;
-			font-size: 0.65em;
+			font-size: 0.5em;
 			text-align: center;
 		}
 
